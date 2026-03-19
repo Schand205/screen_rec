@@ -1,0 +1,3 @@
+/Users/maxihildebrand/Git/screen_rec/build/CMakeFiles/screenshot.dir
+/Users/maxihildebrand/Git/screen_rec/build/CMakeFiles/edit_cache.dir
+/Users/maxihildebrand/Git/screen_rec/build/CMakeFiles/rebuild_cache.dir

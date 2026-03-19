@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/screenshot.dir/main.cpp.o CMakeFiles/screenshot.dir/capture.mm.o -o screenshot  -framework ScreenCaptureKit -framework CoreGraphics -framework CoreImage -framework CoreMedia -framework CoreVideo -framework Foundation
