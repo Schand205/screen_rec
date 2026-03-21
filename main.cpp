@@ -1,8 +1,10 @@
 // main.cpp
 #include "capture.h"
+#include "functions.h"
 #include "ocr.h"
 #include <cstdio>
 #include <CoreGraphics/CoreGraphics.h>
+#include <iostream>
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
@@ -70,6 +72,16 @@ int main() {
                                 scaled.bytesPerRow, nameRegion);
 
     printf("Erkannter Name: '%s'\n", name.c_str());
+
+    //isShiny test
+    std::string name1 = "Shiny Charizard", name2 = "Charizard", name3 = "shiny charizard", name4 = "SHINY CHARIZARD", name5 = "TestShinyTest", name6 = "%§$shiny%§$", name7 = "testtestshintest";
+    std::cout << "isShiny('" << name1 << "') = " << isShiny(name1) << std::endl;
+    std::cout << "isShiny('" << name2 << "') = " << isShiny(name2) << std::endl;
+    std::cout << "isShiny('" << name3 << "') = " << isShiny(name3) << std::endl;
+    std::cout << "isShiny('" << name4 << "') = " << isShiny(name4) << std::endl;
+    std::cout << "isShiny('" << name5 << "') = " << isShiny(name5) << std::endl;
+    std::cout << "isShiny('" << name6 << "') = " << isShiny(name6) << std::endl;
+    std::cout << "isShiny('" << name7 << "') = " << isShiny(name7) << std::endl;
 
     // 6. Aufräumen
     delete[] rgba;

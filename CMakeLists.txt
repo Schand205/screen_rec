@@ -11,6 +11,7 @@ add_executable(screenshot
     main.cpp
     ocr.cpp
     capture.mm
+    functions.cpp
 )
 
 set_source_files_properties(capture.mm
