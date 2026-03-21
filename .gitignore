@@ -1,0 +1,24 @@
+# Build-Verzeichnis
+build/
+
+# macOS
+.DS_Store
+*.dSYM/
+
+# Compiler-Output
+*.o
+*.a
+*.dylib
+
+# Binary
+screenshot
+
+# Debug-Output
+screenshot.png
+crop_debug.png
+
+# IDE
+.vscode/
+.idea/
+*.xcodeproj/
+cmake-build-*/
