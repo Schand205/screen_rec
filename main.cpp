@@ -56,7 +56,7 @@ int main() {
     CropRegion nameRegion = {
         10,  // x
         135,  // y
-	645,  // width
+	700,  // width
         25    // height
     };
 
@@ -70,9 +70,11 @@ int main() {
 
     std::string name = readText(scaled.pixels, scaled.width, scaled.height,
                                 scaled.bytesPerRow, nameRegion);
+	
+    std::cout << "OCR Ergebnis: '" << name << "'" << std::endl;
+    std::cout << "Ist shiny? " << (isShiny(name) ? "Ja" : "Nein") << std::endl;
 
-    printf("Erkannter Name: '%s'\n", name.c_str());
-
+    /*
     //isShiny test
     std::string name1 = "Shiny Charizard", name2 = "Charizard", name3 = "shiny charizard", name4 = "SHINY CHARIZARD", name5 = "TestShinyTest", name6 = "%§$shiny%§$", name7 = "testtestshintest";
     std::cout << "isShiny('" << name1 << "') = " << isShiny(name1) << std::endl;
@@ -82,6 +84,7 @@ int main() {
     std::cout << "isShiny('" << name5 << "') = " << isShiny(name5) << std::endl;
     std::cout << "isShiny('" << name6 << "') = " << isShiny(name6) << std::endl;
     std::cout << "isShiny('" << name7 << "') = " << isShiny(name7) << std::endl;
+    */
 
     // 6. Aufräumen
     delete[] rgba;
